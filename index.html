@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>PWA Заметки</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>📝 Мои заметки</h1>
+
+  <button id="notify-btn" class="notify-btn">
+    🔔 Включить уведомления
+  </button>
+
+  <form id="note-form" class="form">
+    <input type="text" id="note-input" placeholder="Введите заметку..." required>
+    <button type="submit">Добавить</button>
+  </form>
+
+  <ul id="notes-list" class="notes"></ul>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
