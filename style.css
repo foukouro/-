@@ -24,18 +24,24 @@ h1 {
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }
 
 input {
   flex: 1;
+  min-width: 180px;
   padding: 12px;
   border-radius: 10px;
   border: none;
   outline: none;
   background: #1e293b;
   color: white;
+}
+
+input[type="datetime-local"] {
+  max-width: 230px;
 }
 
 button {
